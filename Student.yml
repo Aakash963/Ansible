@@ -1,0 +1,22 @@
+---
+- Student:
+  - name: aakash
+    phone: 4466555
+    address: 
+          roomNo: 12
+          streetNo: 1
+          pinCode: 1236548
+
+  - name: aakash
+    phone: 4466555
+    address:
+           roomNo: 12
+           streetNo: 1
+           pinCode: 1236548
+ 
+  - name: aakash
+    phone: 4466555
+    address:
+           roomNo: 12
+           streetNo: 1
+           pinCode: 1236548
