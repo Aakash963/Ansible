@@ -1,7 +1,7 @@
 ---
-- host: all
-  become: yes 
-  task: 
+  - hosts: all
+    become: yes 
+    task: 
   - name: i want to install tree
     apt:
        name: tree
