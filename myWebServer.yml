@@ -18,7 +18,7 @@
 
   - name: i want to install webserver on RedHat
     yum:
-       name: "{{nikmywebapackonredhathil}}"
+       name: "{{mywebapackonredhat}}"
        state: present
     when: ansible_os_family =="RedHat"  
 
