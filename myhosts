@@ -13,6 +13,3 @@
 172.31.30.81
 
 
-[mywebservers:var]
-mywebvarubuntu=apache2
-mywebvarredhat=httpd
