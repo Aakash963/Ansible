@@ -11,3 +11,8 @@
 [dbserver]
 172.31.30.80
 172.31.30.81
+
+
+[mywebservers:var]
+mywebvarubuntu=apache2
+mywebvarredhat=httpd
