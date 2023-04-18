@@ -10,3 +10,15 @@
   - name: i want display my fisrt tasks result
     debug:
          msg: "{{x}}" 
+
+  - name: install git 
+    apt: 
+       name: git 
+       state: present
+    whene: x.stderr ==""
+
+  - name: install tree
+    apt:
+       name: tree
+       state: present
+    when: x.stderr !=""          
