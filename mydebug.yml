@@ -2,7 +2,7 @@
 - hosts: 172.31.6.127
   become: yes 
   tasks:
-  - name : i want to execute linux command
+  - name: i want to execute linux command
     commande: hostname -f
     register: mytaks
 
