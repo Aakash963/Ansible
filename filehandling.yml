@@ -12,7 +12,8 @@
     copy:
        src: staticfile.txt
        dest: /home/ubuntu/staticfile.txt  
+ 
   - name: i wnat to copy dyna file into ansible nodes     
-    templete:
+    template:
        src: mydynofile.j2
        dest: /var/www/html/index.html
