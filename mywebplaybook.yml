@@ -2,4 +2,4 @@
 - hosts: 172.31.6.127
   become: yes
   roles:
-  - {role: mywebrol, when: ansible_os_family == "Debain"} 
+  - {role: mywebrole, when: ansible_os_family == "Debain"} 
