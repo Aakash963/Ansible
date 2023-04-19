@@ -20,6 +20,6 @@
 
   - name: i want to download remote file into ansible node
     get_url:
-        url: https://dlcdn.apache.org/tomcat/tomcat-8/v8.5.87/bin/apache-tomcat-8.5.87.exe
-        dest: /home/ubuntu/https://dlcdn.apache.org/tomcat/tomcat-8/v8.5.87/bin/apache-tomcat-8.5.87.exe
+        url: https://archive.apache.org/dist/vcl/apache-VCL-2.2.2.tar.bz2.asc
+        dest: /home/ubuntu/apache-VCL-2.2.2.tar.bz2.asc
         force_basic_auth: yes     
