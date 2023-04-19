@@ -7,19 +7,29 @@
   - name: install web server
     apt:
       name: apache2
+    notify: restartwebserver    
 
   - name: i want to copy static file into ansible
     copy:
        src: staticfile.txt
        dest: /home/ubuntu/staticfile.txt  
+    notify: restartwebserver   
  
   - name: i wnat to copy dyna file into ansible nodes     
     template:
        src: mydynofile.j2
        dest: /var/www/html/index.html
+    notify: restartwebserver  
 
   - name: i want to download remote file into ansible node
     get_url:
         url: https://archive.apache.org/dist/vcl/apache-VCL-2.2.2.tar.bz2.asc
         dest: /home/ubuntu/apache-VCL-2.2.2.tar.bz2.asc
         force_basic_auth: yes     
+    notify: restartwebserver      
+   
+  handlers:
+  - name: restartwebserver   
+    service: 
+          name: apache2 
+          state: restart
